@@ -3,6 +3,7 @@ import mobile from '../../src/images/mobile.png';
 import cart from '../../src/images/cart.png'
 
 function Home(props) {
+    console.log(props )
     return (
         <div>
            
@@ -25,10 +26,8 @@ function Home(props) {
                 </div>
                 <div className="btn-wrapper item">
                     <button 
-                    onClick={
-                        ()=>{props.addToCartHandler({pice:1000,name:'i phone 11'})}
-                        }>
-                        Add To Cart</button>
+                    onClick={() =>
+                    props.addToCartHandler({price:1000, name: 'Iphone'} ) }>Add To Cart</button>
                 </div>
             </div>
         </div>
